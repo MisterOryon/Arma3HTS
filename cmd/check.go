@@ -18,5 +18,5 @@ func init() {
 
 var checkCmd = &cobra.Command{
 	Use:   "check",
-	Short: "Allows you to load configuration files",
+	Short: "Allows you to check a preset files, locale mods and remote mods",
 }
