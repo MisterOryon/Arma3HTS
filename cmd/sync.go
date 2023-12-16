@@ -16,7 +16,7 @@ func init() {
 
 var syncCmd = &cobra.Command{
 	Use:   "sync-mods [preset path] [!Workshop path] [URI (scheme://user:password@host:port)]",
-	Short: "",
+	Short: "Allows you to synchronise server mods with a preset files and your local mods",
 	Args:  cobra.MinimumNArgs(3),
 	Run: func(cmd *cobra.Command, args []string) {
 		modList, err := mods.LoadMods(args[0])

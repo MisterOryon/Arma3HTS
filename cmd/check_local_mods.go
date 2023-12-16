@@ -9,7 +9,7 @@ import (
 
 var checkLocalModsCmd = &cobra.Command{
 	Use:   "local-mods [preset path] [!Workshop path]",
-	Short: "Check if all mods folders are present on the machine",
+	Short: "Check if all mods folders are present on your local machine",
 	Args:  cobra.MinimumNArgs(2),
 	Run: func(cmd *cobra.Command, args []string) {
 		modList, err := mods.LoadMods(args[0])
