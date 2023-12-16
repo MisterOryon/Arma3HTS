@@ -11,7 +11,7 @@ import (
 
 var checkRemoteConnexionCmd = &cobra.Command{
 	Use:   "remote-connexion [preset path] [URI (scheme://user:password@host:port)]",
-	Short: "Checks if all mods folder are present on server",
+	Short: "Checks if all mods folder are present on your remote server",
 	Args:  cobra.MinimumNArgs(2),
 	Run: func(cmd *cobra.Command, args []string) {
 		modList, err := mods.LoadMods(args[0])
